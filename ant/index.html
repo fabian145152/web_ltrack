@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rastreo GPS — Ltrack</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="logo" href="ltrack.com.ar">
+                <img src="img/logo.png" alt="Tu logo" id="logoImg" />
+            </a>
+            <nav class="main-nav" id="mainNav">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#caracteristicas">Características</a>
+                <a href="#contacto">Contacto</a>
+                <a href="http://clientes.ltrack.com.ar" target="_blank">Clientes</a>
+            </nav>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Rastreo de vehículos con GPS</h1>
+                    <p>Monitoreo en tiempo real, historial de recorridos y alertas inteligentes para tu flota.</p>
+                    <a class="btn primary" href="#contacto">Solicitar demo</a>
+                </div>
+                <div class="hero-image">
+                    <img src="img/repeticion_ruta.jpg" alt="Vehículos en ruta" id="heroImg" />
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="services container">
+            <h2>Servicios</h2>
+            <div class="cards">
+                <article class="card">
+                    <img src="img/service1.jpg" alt="Monitoreo" />
+                    <h3>Monitoreo en tiempo real</h3>
+                    <p>Visualizá la ubicación exacta de cada unidad desde cualquier dispositivo.</p>
+                </article>
+                <article class="card">
+                    <img src="img/viajes.jpg" alt="Historial" />
+                    <h3>Historial y reportes</h3>
+                    <p>Generá reportes de recorridos, velocidades y tiempos de parada.</p>
+                </article>
+                <article class="card">
+                    <img src="img/velocidades.jpg" alt="Alertas" />
+                    <h3>Listado de velocidades maximas</h3>
+                    <p>Genera listas de velocidades maximas, promedio teimpo detenido etc.</p>
+                </article>
+                <article class="card">
+                    <img src="img/reporte_velocidad.JPG" alt="Alertas" />
+                    <h3>Alertas personalizadas</h3>
+                    <p>Recibí notificaciones por salidas o entradas a geocercas, exceso de velocidad o inactividad.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="caracteristicas" class="features">
+            <div class="container">
+                <h2>Características</h2>
+                <ul class="feature-list">
+                    <li>Panel web y app móvil</li>
+                    <!-- <li>Integración con ERP y APIs</li> -->
+                    <li>Soporte 24/7</li>
+                    <li>Instalación y capacitación</li>
+                    <li><a href="http://clientes.ltrack.com.ar" target="_blank">Clientes</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact container">
+            <h2>Contacto</h2>
+            <div class="contact-grid">
+                <form id="contactForm">
+                    <label for="name">Nombre</label>
+                    <input id="name" name="name" type="text" required />
+
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required />
+
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn primary">Enviar</button>
+                        <button type="button" id="resetBtn" class="btn ghost">Limpiar</button>
+                    </div>
+
+                </form>
+
+                <div class="contact-info">
+                    <h3>Datos</h3>
+                    <p>Tel: +54 9 11 6515 4078</p>
+                    <p>Email: ventas@Ltrack.com.ar</p>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="mapa" class="sitemap container">
+            <h2>Mapa del sitio</h2>
+            <ul class="sitemap-list">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#caracteristicas">Características</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#mapa">Mapa del sitio</a></li>
+                <li><a href="http://clientes.ltrack.com.ar" target="_blank">Clientes</a></li>
+            </ul>
+        </section>
+        <footer class="site-footer">
+            <div class="container footer-content">
+                <p>© <span id="year"></span> Rastreo Ltrack.com.ar. Todos los derechos reservados.</p>
+                <nav class="footer-nav">
+                    <a href="html/privacidad.html">Política de privacidad</a>
+
+                    <a href="html/terminos.html">Términos</a>
+                </nav>
+            </div>
+        </footer>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

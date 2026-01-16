@@ -1,0 +1,276 @@
+:root {
+    --violet-100: #F5EAFE;
+    /* fondo suave */
+    --violet-300: #D9B8F0;
+    /* acento */
+    --violet-500: #A57CE0;
+    /* primary */
+    --muted: #6b6b7a;
+    --radius: 12px;
+    --container: 1100px;
+    --gap: 1.25rem;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    margin: 0;
+    background: var(--violet-100);
+    color: #222
+}
+
+.container {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 2rem
+}
+
+.site-header {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.6), transparent);
+    backdrop-filter: blur(6px);
+    position: sticky;
+    top: 0;
+    z-index: 40
+}
+
+.site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem
+}
+
+.logo img {
+    height: 56px;
+    display: block
+}
+
+.main-nav {
+    display: flex;
+    gap: 1rem
+}
+
+.main-nav a {
+    color: var(--muted);
+    text-decoration: none;
+    padding: 0.5rem 0.7rem;
+    border-radius: 8px
+}
+
+.main-nav a:hover {
+    background: rgba(165, 124, 224, 0.12);
+    color: var(--violet-500)
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.4rem
+}
+
+.hero {
+    padding: 3rem 0
+}
+
+.hero-content {
+    display: flex;
+    gap: 2rem;
+    align-items: center
+}
+
+.hero-text {
+    flex: 1
+}
+
+.hero-image {
+    flex: 1
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: var(--radius);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08)
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.2rem;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer
+}
+
+.btn.primary {
+    background: var(--violet-500);
+    color: white
+}
+
+.btn.ghost {
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.06)
+}
+
+.services {
+    padding: 2rem 0
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.03);
+    text-align: center
+}
+
+.card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px
+}
+
+.features {
+    padding: 2rem 0
+}
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0
+}
+
+.feature-list li {
+    background: white;
+    padding: 0.8rem 1rem;
+    border-radius: 10px
+}
+
+.contact {
+    padding: 2rem 0
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 1.5rem
+}
+
+form label {
+    display: block;
+    margin-top: 0.6rem
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 8px;
+    border: 1px solid #e6e6ee
+}
+
+.form-actions {
+    display: flex;
+    gap: 0.6rem;
+    margin-top: 1rem
+}
+
+.form-note {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.6rem
+}
+
+.site-footer {
+    padding: 1rem 0;
+    margin-top: 2rem
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.map-placeholder {
+    height: 200px;
+    background: #f3f3f6;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--muted)
+}
+
+/* responsive */
+@media(max-width:900px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .hero-content {
+        flex-direction: column-reverse
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr
+    }
+}
+
+@media(max-width:600px) {
+    .cards {
+        grid-template-columns: 1fr
+    }
+
+    .nav-toggle {
+        display: block
+    }
+
+    .main-nav {
+        display: none;
+        position: absolute;
+        right: 1rem;
+        top: 72px;
+        background: white;
+        padding: 0.8rem;
+        border-radius: 10px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08)
+    }
+}
+
+.sitemap {
+    padding: 2rem 0;
+}
+
+.sitemap-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.sitemap-list a {
+    color: var(--violet-500);
+    text-decoration: none;
+}
+
+.sitemap-list a:hover {
+    text-decoration: underline
+}
